@@ -1,0 +1,82 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>DW_Plant</Database>
+    <Server>DESKTOP-DI95B5D\MSSQLSERVER02</Server>
+    <ConnectionString>Data Source=DESKTOP-DI95B5D\MSSQLSERVER02;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>SO+xNwU3y9Ci5N40U5kB7ZlO2pI=13/12/2023 10:47:5213/12/2023 10:45:29</TimeStamp>
+        <ID>
+          <String>DW Plant</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>8+DEfr28K0kLMtkPw9GnYFDLlGM=13/12/2023 10:45:4513/12/2023 10:45:44</TimeStamp>
+        <ID>
+          <String>DW Plant</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>dO29nWVxNKi2oPeMQguq2xcykMY=13/12/2023 10:51:1113/12/2023 10:46:23</TimeStamp>
+        <ID>
+          <String>D Cliente</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Sea6w+WX/YeRQA/P/aRSX86NXKg=13/12/2023 10:51:1113/12/2023 10:46:23</TimeStamp>
+        <ID>
+          <String>T Producto</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>rM3YdtiwVFle3vVh7n82w61ea3g=13/12/2023 10:51:1113/12/2023 10:46:23</TimeStamp>
+        <ID>
+          <String>D Vendedor</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>WiOOVviR3WkAN2ZCBDIiTdFCEnc=13/12/2023 10:51:1113/12/2023 10:46:23</TimeStamp>
+        <ID>
+          <String>D Tiempo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>OulnNb5ZT6VTus7zYfGrLDcYtAQ=13/12/2023 10:51:1113/12/2023 10:46:23t8Jxe0Zqfz9SEV5d2jdM9qt9puM=13/12/2023 10:46:2313/12/2023 10:46:23</TimeStamp>
+        <ID>
+          <String>DW Plant</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>ujIHUgSZjD0ben7cM8tmknfDxzU=13/12/2023 10:13:1213/12/2023 10:13:12</TimeStamp>
+      <ID>
+        <String>DW_Plant</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2023-12-13T14:51:56.123333Z</LastDeployed>
+</DeploymentSnapshot>
