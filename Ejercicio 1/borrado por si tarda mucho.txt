@@ -1,0 +1,53 @@
+DECLARE @RowCountToKeep INT;
+DECLARE @TotalRowCount INT;
+
+-- Calcular el número total de filas en la tabla
+SELECT @TotalRowCount = COUNT(*) FROM VENTAS;
+
+-- Calcular el número de filas que deseas mantener (20%)
+SET @RowCountToKeep = ROUND(0.2 * @TotalRowCount, 0);
+
+-- Borrar el 80% final de las filas
+DELETE FROM VENTAS
+WHERE DOCUMENTO NOT IN (
+    SELECT TOP (@RowCountToKeep) DOCUMENTO
+    FROM VENTAS
+    ORDER BY DOCUMENTO DESC -- Reemplaza Orden_Column con la columna que define el orden de las filas
+);
+
+
+DECLARE @RowCountToKeep INT;
+DECLARE @TotalRowCount INT;
+
+-- Calcular el número total de filas en la tabla
+SELECT @TotalRowCount = COUNT(*) FROM DETALLE_VENTA;
+
+-- Calcular el número de filas que deseas mantener (20%)
+SET @RowCountToKeep = ROUND(0.2 * @TotalRowCount, 0);
+
+-- Borrar el 80% final de las filas
+DELETE FROM DETALLE_VENTA
+WHERE DOCUMENTO NOT IN (
+    SELECT TOP (@RowCountToKeep) DOCUMENTO
+    FROM DETALLE_VENTA
+    ORDER BY DOCUMENTO DESC -- Reemplaza Orden_Column con la columna que define el orden de las filas
+);
+
+
+
+DECLARE @RowCountToKeep INT;
+DECLARE @TotalRowCount INT;
+
+-- Calcular el número total de filas en la tabla
+SELECT @TotalRowCount = COUNT(*) FROM CLIENTES;
+
+-- Calcular el número de filas que deseas mantener (20%)
+SET @RowCountToKeep = ROUND(0.8 * @TotalRowCount, 0);
+
+-- Borrar el 80% final de las filas
+DELETE FROM CLIENTES
+WHERE NRO NOT IN (
+    SELECT TOP (@RowCountToKeep) NRO
+    FROM CLIENTES
+    ORDER BY NRO DESC -- Reemplaza Orden_Column con la columna que define el orden de las filas
+);

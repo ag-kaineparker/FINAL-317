@@ -1,0 +1,15 @@
+
+-- Vaciar la tabla H_ventas
+DELETE FROM H_ventas;
+
+-- Vaciar la tabla dbo.D_cliente
+DELETE FROM dbo.D_cliente;
+
+-- Vaciar la tabla D_tiempo
+DELETE FROM D_tiempo;
+
+-- Vaciar la tabla D_vendedor
+DELETE FROM D_vendedor;
+
+-- Vaciar la tabla T_producto
+DELETE FROM T_producto;
